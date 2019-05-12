@@ -16,6 +16,9 @@ public class Item {
 	@Transient //we don't want to store this field to a database.
 	private int value; // at a later stage we might want to create a business logic.
 	
+	protected Item() {
+		
+	}
 	public Item(int id, String name, int price, int quantity) {
 		this.id = id;
 		this.name = name;
